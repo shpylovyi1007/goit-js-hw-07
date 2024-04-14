@@ -13,19 +13,165 @@ body {
   line-height: 1.5;
 }
 
+/* Task-1!!! */
+
 ul {
   list-style: none;
+  padding-left: 0;
 }
+
+.item {
+  width: 392px;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.item ul {
+  width: 100%;
+}
+
+.item li {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 0;
+  padding-left: 16px;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Task-2!!! */
 
 .gallery {
   display: flex;
-  gap: 10px;
+  gap: 24px;
 }
 
 .gallery li {
-  width: calc((100% - 20px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .gallery img {
   width: 100%;
 }
+
+/* Task-3!!! */
+
+h1 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+#name-input {
+  width: 360px;
+  padding: 8px 140px 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/* Task-4!!! */
+
+.login-form {
+  width: 408px;
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.login-form label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form button {
+  margin-top: 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  padding: 8px 16px;
+}
+
+/* Task-5!!! */
+
+.widget p {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.change-color {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.004em;
+}
+
+/* Task-6!!! */
