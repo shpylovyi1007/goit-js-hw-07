@@ -11,15 +11,17 @@ const boxesContainer = document.getElementById('boxes');
 
 function createBoxes(amount) {
   let size = 30;
+  const arr = [];
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
     box.classList.add('box');
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxesContainer.appendChild(box);
     size += 10;
+    arr.push(box);
   }
+  arr.forEach(elem => boxesContainer.append(elem))
 }
 
 function destroyBoxes() {
