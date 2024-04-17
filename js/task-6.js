@@ -21,7 +21,7 @@ function createBoxes(amount) {
     size += 10;
     arr.push(box);
   }
-  arr.forEach(elem => boxesContainer.append(elem))
+  boxesContainer.append(...arr);
 }
 
 function destroyBoxes() {
